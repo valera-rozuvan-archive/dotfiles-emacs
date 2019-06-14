@@ -47,10 +47,6 @@
   `((".*" ,temporary-file-directory t))
 )
 
-(setq whitespace-style '(face empty tabs lines-tail trailing))
-(setq whitespace-line-column 120)
-(global-whitespace-mode 1)
-
 (global-linum-mode 1)
 
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
@@ -67,3 +63,6 @@
 (add-hook 'after-change-major-mode-hook (lambda() (electric-indent-mode -1)))
 
 (setq gc-cons-threshold 20000000)
+
+(require 'ido)
+(ido-mode t)
