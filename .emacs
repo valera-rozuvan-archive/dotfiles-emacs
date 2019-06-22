@@ -64,7 +64,4 @@
 
 (setq gc-cons-threshold 20000000)
 
-(require 'ido)
-(ido-mode t)
-
 (global-visual-line-mode t)
