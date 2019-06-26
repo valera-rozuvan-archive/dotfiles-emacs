@@ -65,3 +65,13 @@
 (setq gc-cons-threshold 20000000)
 
 (global-visual-line-mode t)
+
+(global-set-key '[(f5)] 'buffer-menu)
+
+(defun create-scratch-buffer nil
+   "create a scratch buffer"
+   (interactive)
+   (switch-to-buffer (get-buffer-create "*scratch*"))
+   (lisp-interaction-mode))
+
+(global-set-key '[(f6)] 'create-scratch-buffer)
