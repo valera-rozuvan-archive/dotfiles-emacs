@@ -57,7 +57,7 @@
 
 (global-visual-line-mode t)
 
-(global-set-key '[(f5)] 'buffer-menu)
+(setq Buffer-menu-sort-column 5)
 
 (defun create-scratch-buffer nil
    "create a scratch buffer"
@@ -65,4 +65,16 @@
    (switch-to-buffer (get-buffer-create "*scratch*"))
    (lisp-interaction-mode))
 
-(global-set-key '[(f6)] 'create-scratch-buffer)
+(defun revert-buffer-no-confirm ()
+    "Revert buffer without confirmation."
+    (interactive)
+    (revert-buffer :ignore-auto :noconfirm))
+
+(global-set-key '[(f1)] 'buffer-menu)
+(global-set-key '[(f2)] 'create-scratch-buffer)
+(global-set-key '[(f5)] 'revert-buffer-no-confirm)
+(global-set-key '[(f10)] 'delete-frame)
+(global-set-key '[(f11)] 'delete-other-windows)
+
+(global-set-key (kbd "C-+") 'text-scale-increase)
+(global-set-key (kbd "C--") 'text-scale-decrease)
