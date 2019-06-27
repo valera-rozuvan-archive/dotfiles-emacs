@@ -59,6 +59,10 @@
 
 (setq Buffer-menu-sort-column 5)
 
+(recentf-mode 1)
+(setq recentf-max-menu-items 25)
+(setq recentf-max-saved-items 25)
+
 (defun create-scratch-buffer nil
    "create a scratch buffer"
    (interactive)
@@ -70,9 +74,14 @@
     (interactive)
     (revert-buffer :ignore-auto :noconfirm))
 
-(global-set-key '[(f1)] 'buffer-menu)
-(global-set-key '[(f2)] 'create-scratch-buffer)
+(global-set-key '[(f1)] 'dired)
+(global-set-key '[(f2)] 'eshell)
+(global-set-key '[(f3)] 'buffer-menu)
+(global-set-key '[(f4)] 'recentf-open-files)
+
 (global-set-key '[(f5)] 'revert-buffer-no-confirm)
+(global-set-key '[(f6)] 'create-scratch-buffer)
+
 (global-set-key '[(f10)] 'delete-frame)
 (global-set-key '[(f11)] 'delete-other-windows)
 
