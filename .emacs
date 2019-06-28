@@ -84,6 +84,7 @@
 
 (global-set-key '[(f10)] 'delete-frame)
 (global-set-key '[(f11)] 'delete-other-windows)
+(global-set-key '[(f12)] 'visual-line-mode)
 
 (global-set-key (kbd "C-+") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)
