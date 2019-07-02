@@ -64,15 +64,15 @@
 (setq recentf-max-saved-items 25)
 
 (defun create-scratch-buffer nil
-   "create a scratch buffer"
-   (interactive)
-   (switch-to-buffer (get-buffer-create "*scratch*"))
-   (lisp-interaction-mode))
+  "create a scratch buffer"
+  (interactive)
+  (switch-to-buffer (get-buffer-create "*scratch*"))
+  (lisp-interaction-mode))
 
 (defun revert-buffer-no-confirm ()
-    "Revert buffer without confirmation."
-    (interactive)
-    (revert-buffer :ignore-auto :noconfirm))
+  "Revert buffer without confirmation."
+  (interactive)
+  (revert-buffer :ignore-auto :noconfirm))
 
 (global-set-key '[(f1)] 'dired)
 (global-set-key '[(f2)] 'eshell)
