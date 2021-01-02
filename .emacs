@@ -8,11 +8,11 @@
 
 )
 
-(set-default-font "IBM Plex Mono 13")
-(add-to-list
-  'default-frame-alist
-  '(font . "IBM Plex Mono 13")
-)
+;; (set-default-font "IBM Plex Mono 13")
+;; (add-to-list
+;;   'default-frame-alist
+;;   '(font . "IBM Plex Mono 13")
+;; )
 
 (setq initial-scratch-message "")
 
@@ -50,6 +50,8 @@
   display-time-format "[%d %b %Y, %H:%M:%S]"
 )
 (display-time-mode t)
+
+(set-face-attribute 'region nil :background "#d3d8e0")
 
 (add-hook 'after-change-major-mode-hook (lambda() (electric-indent-mode -1)))
 
