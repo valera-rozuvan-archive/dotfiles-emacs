@@ -16,8 +16,8 @@
 
 (setq initial-scratch-message "")
 
-(add-to-list 'default-frame-alist '(height . 26))
-(add-to-list 'default-frame-alist '(width . 121))
+;; (add-to-list 'default-frame-alist '(height . 26))
+;; (add-to-list 'default-frame-alist '(width . 121))
 
 (setq line-number-mode t)
 (setq column-number-mode t)
