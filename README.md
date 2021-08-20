@@ -4,7 +4,7 @@ Dotfiles for minimal Emacs setup.
 
 ## getting latest source
 
-A public git repo is vailable at [git.rozuvan.net/dotfiles-emacs](https://git.rozuvan.net/dotfiles-emacs). All other sources should be considered mirrors.
+A public git repo is available at [git.rozuvan.net/dotfiles-emacs](https://git.rozuvan.net/dotfiles-emacs). Several mirrors exist: [mirror 1](https://github.com/valera-rozuvan/dotfiles-emacs), [mirror 2](https://gitlab.com/valera-rozuvan/dotfiles-emacs).
 
 You can get a local copy by running the command:
 
