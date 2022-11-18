@@ -1,5 +1,11 @@
 # dotfiles-emacs
 
+## wip has moved
+
+Future work on this repository has moved to the monorepo [valera-rozuvan/dotfiles](https://github.com/valera-rozuvan/dotfiles). This repo is archived for historic purposes (to preserve commit history). Navigate over to [dotfiles/emacs/dotfiles-emacs](https://github.com/valera-rozuvan/dotfiles/tree/main/emacs/dotfiles-emacs) to see updates (if any).
+
+## introduction
+
 Dotfiles for minimal Emacs setup.
 
 ## getting latest source
